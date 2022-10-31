@@ -38,13 +38,9 @@
   border-radius: 4px;
   outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:focus {
-  border: 1px solid #2196f3;
-}
-.form-input:focus + .ikon-form-input {
-  fill: #2196f3;
+  &:focus {
+    border: 1px solid #2196f3;
+  }
 }
 
 .ikon-form-input {
@@ -52,6 +48,9 @@
   top: 50%;
   left: 15px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .form-input:focus + & {
+    fill: #2196f3;
+  }
 }
 .form-grup-textarea {
   display: flex;
@@ -69,19 +68,18 @@
   border-radius: 4px;
   padding: 12px 16px;
   outline: transparent;
-}
-.form-textarea:focus {
-  border: 1px solid #2196f3;
-}
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+  &::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
-.form-textarea::placeholder {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .check {
@@ -112,16 +110,15 @@
   border-radius: 2px;
   fill: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox:checked + .check-text span {
-  background-color: #2196f3;
-  border-color: transparent;
-  fill: #ffffff;
-  border: 0.2px solid #ffffff;
-}
-
-.checkbox:focus + .check-text span {
-  border-color: #2196f3;
+  .checkbox:checked + & {
+    background-color: #2196f3;
+    border-color: transparent;
+    fill: #ffffff;
+    border: 0.2px solid #ffffff;
+  }
+  .checkbox:focus + & {
+    border-color: #2196f3;
+  }
 }
 
 .check-text {
@@ -163,10 +160,10 @@
   border: transparent;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-form:hover,
-.btn-form:focus {
-  background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
 }
