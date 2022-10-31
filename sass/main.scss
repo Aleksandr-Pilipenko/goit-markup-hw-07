@@ -1,5 +1,6 @@
 @import './base/reset';
 @import './utils/vars';
+@import './utils/visuali';
 @import './components/body';
 @import './components/container';
 @import './components/section';
@@ -9,3 +10,18 @@
 @import './layauts/navigation-site';
 @import './layauts/contact-header';
 @import './layauts/hero';
+@import './layauts/section-feature';
+@import './layauts/section-work';
+@import './layauts/section-team';
+@import './layauts/section-clients';
+@import './layauts/footer/footer-body';
+@import './layauts/footer/logo';
+@import './layauts/footer/contact';
+@import './layauts/footer/networks';
+@import './layauts/footer/form-feedback';
+
+@import './layauts/portfolio/filtr-batton';
+@import './layauts/portfolio/section-project';
+
+@import './layauts/modal/backdrop-modal';
+@import './layauts/modal/form-modal';
