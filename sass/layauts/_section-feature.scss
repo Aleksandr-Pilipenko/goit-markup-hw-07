@@ -1,8 +1,13 @@
-.section-feature {
+.feature {
   padding-top: 94px;
   padding-bottom: 47px;
 }
-.feature-content {
+
+.feature__list {
+  display: flex;
+  gap: 30px;
+}
+.feature__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +18,7 @@
   height: 120px;
 }
 
-.feature-list {
-  display: flex;
-  gap: 30px;
-}
-.feature-title {
+.feature__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -26,7 +27,7 @@
 
   margin-bottom: 10px;
 }
-.feature-text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

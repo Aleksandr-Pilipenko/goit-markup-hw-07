@@ -1,9 +1,9 @@
-.section-work {
+.work {
   padding-top: 47px;
   padding-bottom: 94px;
 }
 
-.work-title {
+.work__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -13,15 +13,15 @@
   margin-bottom: 50px;
 }
 
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
 }
 
-.work-box {
+.work__box {
   position: relative;
 }
-.work-box-text {
+.work__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

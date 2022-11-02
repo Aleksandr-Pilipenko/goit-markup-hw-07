@@ -104,7 +104,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.header-page {
+.header__page {
   display: flex;
   align-items: center;
 }
@@ -113,12 +113,12 @@ body {
   color: var(--super-blask);
 }
 
-.colortext {
+.logo__color {
   color: var(--accent-color);
 }
 
 .logo,
-.colortext.logo-footer {
+.logo__color {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -126,17 +126,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.nav .site-nav.current {
+.navigation__list .navigation__site.current {
   color: var(--accent-color);
 }
 
-.nav {
+.navigation__list {
   display: flex;
   margin-left: 93px;
   gap: 50px;
 }
 
-.site-nav {
+.navigation__site {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -151,7 +151,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav:hover, .site-nav:focus {
+.navigation__site:hover, .navigation__site:focus {
   color: var(--accent-color);
 }
 
@@ -168,13 +168,13 @@ body {
   border-radius: 2px;
 }
 
-.list-contact {
+.conect {
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
 
-.contact {
+.conect__cont {
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
@@ -189,11 +189,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact:hover, .contact:focus {
+.conect__cont:hover, .conect__cont:focus {
   color: var(--accent-color);
 }
 
-.header-icon {
+.conect__icon {
   fill: currentColor;
 }
 
@@ -210,7 +210,7 @@ body {
   margin: 0 auto;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -223,7 +223,7 @@ body {
   margin-right: auto;
 }
 
-.hero-btn {
+.hero__btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -241,17 +241,22 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   color: var(--super-waite);
   background-color: var(--accent-btn);
 }
 
-.section-feature {
+.feature {
   padding-top: 94px;
   padding-bottom: 47px;
 }
 
-.feature-content {
+.feature__list {
+  display: flex;
+  gap: 30px;
+}
+
+.feature__content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,12 +267,7 @@ body {
   height: 120px;
 }
 
-.feature-list {
-  display: flex;
-  gap: 30px;
-}
-
-.feature-title {
+.feature__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -276,18 +276,18 @@ body {
   margin-bottom: 10px;
 }
 
-.feature-text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.section-work {
+.work {
   padding-top: 47px;
   padding-bottom: 94px;
 }
 
-.work-title {
+.work__title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -296,16 +296,16 @@ body {
   margin-bottom: 50px;
 }
 
-.work-list {
+.work__list {
   display: flex;
   gap: 30px;
 }
 
-.work-box {
+.work__box {
   position: relative;
 }
 
-.work-box-text {
+.work__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -450,7 +450,7 @@ body {
   gap: 70px;
 }
 
-.logo-footer {
+.footer__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -461,11 +461,11 @@ body {
   margin-bottom: 20px;
 }
 
-.footer-contact {
+.footer__contact {
   margin-bottom: 9px;
 }
 
-.footer-address {
+.footer__address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -474,7 +474,7 @@ body {
   display: inline-block;
 }
 
-.footer-link {
+.footer__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -485,11 +485,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link:hover, .footer-link:focus {
+.footer__link:hover, .footer__link:focus {
   color: var(--accent-color);
 }
 
-.footer-soc-title {
+.networks__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
@@ -498,13 +498,13 @@ body {
   color: var(--super-waite);
 }
 
-.footer-soc-item {
+.networks__list {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
 
-.footer-soc-logo {
+.networks__logo {
   display: flex;
   width: 44px;
   height: 44px;
@@ -516,11 +516,11 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-soc-logo:hover, .footer-soc-logo:focus {
+.networks__logo:hover, .networks__logo:focus {
   background: var(--accent-color);
 }
 
-.footer-networks {
+.networks__ikon {
   fill: var(--super-waite);
 }
 

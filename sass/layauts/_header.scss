@@ -2,19 +2,19 @@
   background-color: var(--super-waite);
   border-bottom: 1px solid #ececec;
 }
-.header-page {
+.header__page {
   display: flex;
   align-items: center;
 }
 .logo {
   color: var(--super-blask);
 }
-.colortext {
+.logo__color {
   color: var(--accent-color);
 }
 
 .logo,
-.colortext.logo-footer {
+.logo__color {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -22,16 +22,17 @@
   letter-spacing: 0.03em;
 }
 
-.nav .site-nav.current {
+.navigation__list .navigation__site.current {
   color: var(--accent-color);
 }
-.nav {
+
+.navigation__list {
   display: flex;
   margin-left: 93px;
   gap: 50px;
 }
 
-.site-nav {
+.navigation__site {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,13 +70,13 @@
   border-radius: 2px;
 }
 
-.list-contact {
+.conect {
   display: flex;
   gap: 50px;
   margin-left: auto;
 }
 
-.contact {
+.conect__cont {
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
@@ -97,6 +98,6 @@
   }
 }
 
-.header-icon {
+.conect__icon {
   fill: currentColor;
 }
