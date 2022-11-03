@@ -1,20 +1,20 @@
 @import './base/reset';
 @import './utils/vars';
 @import './utils/visuali';
-@import './components/body';
-@import './components/container';
-@import './components/section';
+@import './base/body';
+@import './base/container';
+@import './base/section';
 
 @import './layauts/header';
-@import './layauts/hero';
-@import './layauts/section-feature';
-@import './layauts/section-work';
-@import './layauts/section-team';
-@import './layauts/section-clients';
 @import './layauts/footer';
 
-@import './layauts/portfolio/filtr-batton';
-@import './layauts/portfolio/section-project';
+@import './components/hero';
+@import './components/section-feature';
+@import './components/section-work';
+@import './components/section-team';
+@import './components/section-clients';
 
-@import './layauts/modal/backdrop-modal';
-@import './layauts/modal/form-modal';
+@import './components/portfolio/filtr-batton';
+@import './components/portfolio/section-project';
+@import './components/modal/backdrop-modal';
+@import './components/modal/form-modal';
